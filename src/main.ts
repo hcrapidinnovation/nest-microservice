@@ -12,7 +12,7 @@ async function bootstrap() {
         {
             transport: Transport.GRPC,
             options: {
-                url: `${process.env.MICRO_SERVER_URL}:${process.env.MICRO_MSC_PORT}`,
+                url: '0.0.0.0:50051',
                 package: 'microservice',
                 protoPath: join(__dirname, '_proto/microservice.proto')
             }
